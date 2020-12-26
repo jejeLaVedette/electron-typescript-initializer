@@ -1,0 +1,19 @@
+{
+    "name": "electron-typescript-guide",
+    "version": "0.0.1",
+    "description": "This is a sample project for peoples, who want to start with Electron in combination with Typescript",
+    "author": {
+        "name": "Batajus"
+    },
+    "main": "build/index.js",
+    "scripts": {
+        "compile": "tsc && copyfiles -f src/index.html build",
+        "start": "npm run compile && electron ."
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "copyfiles": "^2.4.0",
+        "electron": "^10.1.3",
+        "typescript": "^4.0.3"
+    }
+}
